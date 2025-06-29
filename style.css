@@ -1,0 +1,108 @@
+/* Base Setup */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #4b6cb7, #182848);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 16px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+  }
+  
+  /* Headings */
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .scoreboard {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .score h2 {
+    font-size: 1.2rem;
+  }
+  
+  .score div {
+    font-size: 2rem;
+    margin-top: 8px;
+  }
+  
+  /* Buttons */
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 20px 0;
+    flex-wrap: wrap;
+  }
+  
+  .choose {
+    flex: 1 1 30%;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: none;
+    padding: 15px 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .choose:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  
+  .choose:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  /* Info & Result */
+  .round-info, .final-result {
+    margin: 10px 0;
+    font-size: 1.2rem;
+  }
+  
+  .final-result {
+    font-weight: bold;
+    color: #ffeb3b;
+  }
+  
+  /* Reset Button */
+  #reset {
+    margin-top: 15px;
+    padding: 12px 18px;
+    background-color: #fdd835;
+    border: none;
+    color: #333;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  #reset:hover {
+    background-color: #fbc02d;
+  }
+  

@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Rock Paper Sissors</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    HI THIS IS ROCK PAPER SISSORS GAME.
-    <script src="RPS.js"></script>
+
+  <div class="container">
+    <h1>Rock Paper Sissors</h1>
+
+    <div class="scoreboard">
+      <div class="score">
+        <h2>Player</h2>
+        <div id="humanScore">0</div>
+      </div>
+      <div class="score">
+        <h2>Computer</h2>
+        <div id="computerScore">0</div>
+      </div>
+    </div>
+
+    <div class="buttons">
+      <button class="choose" id="rock" value="rock">✊ Rock</button>
+      <button class="choose" id="paper" value="paper">✋ Paper</button>
+      <button class="choose" id="sissors" value="sissors">✌️ Sissors</button>
+    </div>
+
+    <div id="roundInfo" class="round-info">Make your move!</div>
+    <div id="win" class="final-result"></div>
+
+    <button id="reset">🔁 Reset Game</button>
+  </div>
+
+  <script src="RPS.js"></script>
 </body>
 </html>
